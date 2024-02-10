@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const links = [
     {id: 1, url: '/', text: 'home'},
@@ -16,7 +16,7 @@ const NavLinks = () => {
     <>
         {links.map(({id,url, text})=>{
             return <li key={id}>
-                <NavLink to={url} className="capitalize">{text}</NavLink>
+                <Link to={url} className="capitalize ">{text}</Link>
             </li>
         })} 
 
